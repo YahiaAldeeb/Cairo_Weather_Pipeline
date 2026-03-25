@@ -113,5 +113,4 @@ Airflow orchestrates the full pipeline, ensuring dbt runs only after a successfu
 
 | DAG | Schedule | Description |
 |---|---|---|
-| `weather_ingestion_dag` | Every 10 mins | Fetches live data from Weatherstack API and loads into Postgres |
-| `weather_dbt_dag` | Triggered | Runs dbt models after ingestion completes |
+| `weather-api-dbt-orchestrator` | Every 5 mins | Fetches live data from Weatherstack API and loads into Postgres and Runs dbt models after ingestion completes |
